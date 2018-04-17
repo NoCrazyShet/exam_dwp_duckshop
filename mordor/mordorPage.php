@@ -32,12 +32,10 @@
             }
             ?>
 
-
-
-
             <form action="includes/logoutController.php" method="get">
-                <input type="submit" value="Click here to log out!" class="waves-effect waves-light btn-large">
+                <button type="submit" class="waves-effect waves-light btn-large">Log Out</button>
             </form>
+
     </div>
     <script src="../materialize/js/bin/materialize.min.js"></script>
     </body>
