@@ -39,5 +39,6 @@
                 <input type="submit" value="Click here to log out!" class="waves-effect waves-light btn-large">
             </form>
     </div>
+    <script src="../materialize/js/bin/materialize.min.js"></script>
     </body>
     </html>
