@@ -5,7 +5,7 @@
       <paths name="Apache from XAMPP">
         <serverdata>
           <mappings>
-            <mapping deploy="" local="$PROJECT_DIR$" web="/DWP_real/" />
+            <mapping deploy="" local="$PROJECT_DIR$" web="/exam_dwp_duckshop/" />
           </mappings>
         </serverdata>
       </paths>
