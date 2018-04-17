@@ -15,10 +15,10 @@
                 redirect_to('../mordorPage.php');
             }
             else {
-                redirect_to('../loginPage.php?loginStatus=incorrect');
+                redirect_to('../blackGatePage.php?loginStatus=incorrect');
             }
         }}
         else {
-            redirect_to('../loginPage.php?loginStatus=logout');
+            redirect_to('../blackGatePage.php?loginStatus=logout');
         }
     }

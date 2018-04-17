@@ -6,4 +6,4 @@ require_once("functions.php");
         setcookie(session_name(), '', time()-42000, '/');
     }
     session_destroy();
-    redirect_to("../loginPage.php?loginStatus=logout");
+    redirect_to("../blackGatePage.php?loginStatus=logout");
