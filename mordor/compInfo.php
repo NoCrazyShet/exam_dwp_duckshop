@@ -1,7 +1,7 @@
 <?php
 require_once("includes/connection.php");
 
-$stmt = $connection->query("SELECT CVR, logo, logoText, aboutUs, zipCode, street, streetNumber FROM companyinfo");
+$stmt = $connection->query("SELECT * FROM companyinfo");
 $compInfo = $stmt->fetch(PDO::FETCH_ASSOC);
 var_dump($compInfo);
 ?>
