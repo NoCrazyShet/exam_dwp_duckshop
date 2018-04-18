@@ -1,4 +1,5 @@
 <?php
+require_once("mordor/includes/connection.php");
 ?>
 
 <html>
@@ -19,6 +20,8 @@
 
         <footer class="page-footer">
             <?php
+            $stmt = $connection->query("SELECT CVR FROM companyinfo");
+            $CVR = $stmt->fetch(PDO::FETCH_ASSOC);
             include ("footer.php");
             ?>
         </footer>
