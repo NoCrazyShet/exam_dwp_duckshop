@@ -1,9 +1,5 @@
 <?php
-require_once("includes/connection.php");
-
-$stmt = $connection->query("SELECT * FROM companyinfo");
-$compInfo = $stmt->fetch(PDO::FETCH_ASSOC);
-var_dump($compInfo);
+require_once("includes/compInfoController.php");
 ?>
 
 <div class="row">
@@ -30,7 +26,7 @@ var_dump($compInfo);
               <label for="street">Street</label>
             </div>
             <div class="input-field col s6 m3">
-                <textarea id="streetNumber" class="materialize-textarea"><?php echo $compInfo['street'];?></textarea>
+                <textarea id="streetNumber" class="materialize-textarea"><?php echo $compInfo['streetNumber'];?></textarea>
                 <label for="streetNumber">Street number</label>
             </div>
             <div class="input-field col s6 m3">
@@ -38,5 +34,6 @@ var_dump($compInfo);
                 <label for="zipCode">Zip Code</label>
             </div>
         </div>
+        <button class="waves-effect waves-light btn-large" type="submit" name="submit">Update Company Information</button>
     </form>
   </div>
