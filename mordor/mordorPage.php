@@ -1,6 +1,6 @@
-<?php   require_once("includes/session.php");
-        require_once("includes/connection.php");
-        require_once("includes/functions.php");
+<?php   require_once("../includes/permanents/session.php");
+        require_once("../includes/permanents/connection.php");
+        require_once("../includes/permanents/functions.php");
         confirm_logged_in();
 ?>
     <html>
@@ -25,15 +25,9 @@
     </header>
     <div class="container">
         <h1 align="center">Welcome to the backend</h1>
-            <?php
-            $allowed = array('compInfo', 'products');
-            $page = ( isset($_GET['page']) ) ? $_GET['page'] : 'mordorPage';
-            if ( in_array($page, $allowed) ) {
-            include("./$page.php");
-            }
-            ?>
+            <?php include("../includes/controllers/mordorController.php") ?>
 
-            <form action="includes/logoutController.php" method="get">
+            <form action="../includes/controllers/logoutController.php" method="get">
                 <button type="submit" class="waves-effect waves-light btn-large">Log Out</button>
             </form>
 

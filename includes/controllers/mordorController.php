@@ -1,7 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jape
- * Date: 18-04-2018
- * Time: 10:26
- */
+$allowed = array('compInfo', 'products');
+$page = ( isset($_GET['page']) ) ? $_GET['page'] : 'mordorPage';
+if ( in_array($page, $allowed) ) {
+    include("./$page.php");
+}

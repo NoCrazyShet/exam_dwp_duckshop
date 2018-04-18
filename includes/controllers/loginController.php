@@ -1,7 +1,7 @@
 <?php
-    require_once("session.php");
-    require_once("connection.php");
-    require_once("functions.php");
+    require_once("../permanents/session.php");
+    require_once("../permanents/connection.php");
+    require_once("../permanents/functions.php");
     if (isset($_POST['eMail']) || isset($_POST['password'])) {
         $eMail = trim(htmlspecialchars($_POST['eMail']));
         $pass = trim(htmlspecialchars($_POST['password']));
@@ -12,7 +12,7 @@
             if(password_verify($pass, $storedUser['password'])) {
                 $_SESSION['userID'] = $storedUser['userID'];
                 $_SESSION['eMail'] = $storedUser['eMail'];
-                redirect_to('../mordorPage.php');
+                redirect_to("../../mordor/mordorPage.php");
             }
             else {
                 redirect_to('../blackGatePage.php?loginStatus=incorrect');

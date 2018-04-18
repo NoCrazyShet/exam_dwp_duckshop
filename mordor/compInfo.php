@@ -1,5 +1,5 @@
 <?php
-require_once("includes/compInfoController.php");
+require_once("../includes/controllers/compInfoController.php");
 ?>
 
 <div class="row">

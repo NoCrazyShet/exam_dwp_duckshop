@@ -1,6 +1,6 @@
 <?php
-    require_once("includes/session.php");
-    require_once("includes/functions.php");
+    require_once("../includes/permanents/session.php");
+    require_once("../includes/permanents/functions.php");
 
     if(logged_in()) {
         redirect_to("mordorPage.php");
@@ -25,7 +25,7 @@ if(!empty($_GET['loginStatus'])) {
 }
 ?>
 <h2>Please login</h2>
-<form action="includes/loginController.php" method="post">
+<form action="../includes/controllers/loginController.php" method="post">
     Username:
     <input type="text" name="eMail" maxlength="30" value=""/>
     Password:

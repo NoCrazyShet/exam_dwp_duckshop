@@ -1,5 +1,5 @@
 <?php
-require_once("mordor/includes/connection.php");
+require_once("includes/permanents/connection.php");
 ?>
 
 <html>
@@ -10,7 +10,7 @@ require_once("mordor/includes/connection.php");
     <body>
         <header>
             <?php
-            include ("header.php");
+            include("includes/presentation/header.php");
             ?>
         </header>
 
@@ -22,7 +22,7 @@ require_once("mordor/includes/connection.php");
             <?php
             $stmt = $connection->query("SELECT CVR FROM companyinfo");
             $CVR = $stmt->fetch(PDO::FETCH_ASSOC);
-            include ("footer.php");
+            include("includes/presentation/footer.php");
             ?>
         </footer>
     </body>
