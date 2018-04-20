@@ -1,2 +1,3 @@
 <?php
-echo "cuntface";
+require_once("../includes/controllers/productController.php");
+
